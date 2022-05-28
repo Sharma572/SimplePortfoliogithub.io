@@ -16,14 +16,13 @@
      grid-template-columns: 300px 700px;
 }
 .left-section{
-    grid-area:1/1/3/2;
     grid-column:span 1;
     background-color:#000000;
     color: white;
     padding: 1rem;
 }
 .right-section{
-    grid-area:1/2/3/3;
+   
     grid-column:span 1 / span 2;
     background-color: darkgray;
 }
@@ -89,3 +88,16 @@
     border: 1px solid white;
     height: 4px;
 }
+
+/* Resposive Media Query */
+@media screen and (max-width:673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* .grid-container  {
+    
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  } */
